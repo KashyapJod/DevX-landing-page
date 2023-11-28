@@ -12,6 +12,7 @@ body {
     margin: 20px auto;
 }
 section {
+    width:100%
     padding: 20px;
     margin-bottom: 20px;
     background-image: url(section.jpeg); /* Light green sections */
