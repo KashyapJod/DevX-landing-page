@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #a2e8a3;
+    background-image: url(bgp.avif); /* Light green background */
+    color: #333;
+}
+.container {
+    width: 100%;
+    margin: 20px auto;
+}
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-image: url(section.jpeg); /* Light green sections */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Slightly increased shadow */
+    transition: all 0.3s ease-in-out;
+}
+h2 {
+    color: #1a936f; /* Dark green headings */
+}
+p {
+    line-height: 1.6;
+    color: #444;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    transition: transform 0.3s;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+div img{
+    margin-top: 10px;
+    content:inherit;
+    height:50%;
+    width: 50%;
+}
+footer {
+    background-image: url(footer.jpeg); /* Dark green footer */
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+footer p {
+    margin-bottom: 0;
+    color: aqua;
+}
+.team-member {
+    text-align: center;
+    margin-bottom: 20px;
+    background-image: url(team.jpeg);
+}
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+.team-member:hover img {
+    transform: scale(1.1);
+}
+.team-member p {
+    margin-top: 10px;
+    color: #1a936f; /* Dark green text */
+}
+
+#login{
+    position: relative;
+    text-align: center;
+    margin-top: 1.4%;
+}
+ 
+#logo{
+    height:100px;
+    width: fit-content;
+}
+nav{
+    background-color:#fff200;
+    color: #000000;
+}
+
+span{
+    color:#0000;
+}
+/* Example for navigation links */
+.navbar-nav .nav-item a {
+    transition: color 0.3s ease-in-out; /* Smooth color transition */
+}
+
+.navbar-nav .nav-item a:hover {
+    color: #1a936f; /* Change to a different color on hover */
+}
+/* Example for section hover effect */
+section:hover {
+    transform: scale(1.05); /* Enlarge section on hover */
+}
+/* Example for footer hover effect */
+
+.card-deck .card img {
+    margin-top: 10%;
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.card-deck{
+    padding-top: 3%;
+    background-image: url(service.jpeg);
+}
+#contact{
+    background-image: url(contact.jpeg);
+}
+#contact p{
+    color: aqua;
+}
+
+nav{
+    background-image:url(nav.jpeg);
+}

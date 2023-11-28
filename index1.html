@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelance Services - Web App & Design</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" id="logo" alt="Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary" href="https://kashyapjod.github.io/3D_login/">Log In</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container" id="services">
+        <section>
+            <div class="container" id="services">
+                <section>
+                    <h2>Our Services</h2>
+                    <div class="card-deck">
+                        <div class="col-sm-12 col-md-4 mb-4">
+                            <div class="card">
+                                <img src="webd.jpg" class="card-img-top" alt="Web Development">
+                                <div class="card-body">
+                                    <h5 class="card-title">Web Development</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4 mb-4">
+                            <div class="card">
+                                <img src="appd.jpg" class="card-img-top" alt="App Development">
+                                <div class="card-body">
+                                    <h5 class="card-title">App Development</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4 mb-4">
+                            <div class="card">
+                                <img src="grapd.webp" class="card-img-top" alt="Design Services">
+                                <div class="card-body">
+                                    <h5 class="card-title">Design Services</h5>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+        <section id="team">
+            <h2>Our Team</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img src="mayukh.jpg" alt="Team Member 1">
+                        <p>Mayukh Saha</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img src="kashyap.jpg" alt="Team Member 2">
+                        <p>Kumar Kashyap</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img src="aayush.jpg" alt="Team Member 3">
+                        <p>Aayush Singh</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you're interested in our services or have any inquiries, feel free to contact us:</p>
+            
+            <p>Email: <a href=mailto:<nowiki>devxbpgc@gmail.com</p></a>
+            <p>Phone: <a href="tel:6206671966">6206671966</p></a>
+        </section>
+    </div>
+
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2023 DevX</p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Smooth scrolling for navigation links
+        $(document).ready(function(){
+            $("a").on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function(){
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
